@@ -1,6 +1,6 @@
 " General Settings
 set nocompatible
-set term=screen-256color
+" set term=screen-256color
 execute pathogen#infect()
 syntax on filetype plugin indent on
 set ignorecase
@@ -20,6 +20,10 @@ set mouse=a
 " Show the command as it's typed
 set showcmd
 set hidden
+set termguicolors     " enable true colors support
+" let ayucolor="mirage" " for mirage version of theme
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 
 " vim airline
 set laststatus=2
