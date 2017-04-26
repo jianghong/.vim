@@ -27,8 +27,6 @@ colorscheme ayu
 
 " vim airline
 set laststatus=2
-" Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
@@ -70,7 +68,7 @@ let g:NERDSpaceDelims = 1
 
 " vim-test
 nmap <silent> <leader>t :TestNearest<CR>
-nmap <silent> <leader>T :TestFile -strategy=asyncrun<CR>
+nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
@@ -99,3 +97,16 @@ nnoremap <S-Tab> :bp<CR>
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" Copy current file to clipboard
+nmap <Leader>% :let<Space>@*=@%<CR>
+
+" splits
+set splitbelow
+set splitright
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+tnoremap <Esc> <C-\><C-n>
