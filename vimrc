@@ -50,12 +50,12 @@ autocmd Filetype proto setlocal ts=4 sw=4 sts=0 expandtab
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
 \ --ignore .git
-\ --ignore lib/
 \ --ignore .svn
 \ --ignore .hg
 \ --ignore .swp
 \ --ignore .DS_Store
 \ --ignore "**/*.pyc"
+\ --ignore "TEST-*.xml"
 \ --ignore "node_modules"
 \ -g ""'
 
