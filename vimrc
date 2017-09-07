@@ -42,9 +42,10 @@ map <leader>r :NERDTreeFind<cr>
 set clipboard=unnamed
 
 " Indents
-autocmd Filetype coffee,xml,htmldjango,less,javascript,css,scss,html,jsx,ruby,eruby,yaml,sh,json setlocal ts=2 sw=2 sts=0 expandtab
+set expandtab
+autocmd Filetype coffee,xml,htmldjango,less,javascript,css,scss,html,jsx,ruby,eruby,yaml,sh,json setlocal ts=2 sw=2 sts=0
 autocmd Filetype go setlocal ts=4 sw=4 sts=4
-autocmd Filetype proto setlocal ts=4 sw=4 sts=0 expandtab
+autocmd Filetype proto setlocal ts=4 sw=4 sts=0
 
 " CtrlP Settings
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -110,3 +111,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 tnoremap <Esc> <C-\><C-n>
+
+" close windows/delete buffers
+nnoremap <C-q> :q<cr>
+nnoremap <C-q> :bd<cr>
