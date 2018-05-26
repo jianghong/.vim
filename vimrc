@@ -7,7 +7,7 @@ set ignorecase
 set number
 set ai
 set backspace=indent,eol,start
-:set colorcolumn=120
+set colorcolumn=120
 " Highlight searches
 set hlsearch
 " No intro message
@@ -43,22 +43,22 @@ set clipboard=unnamed
 
 " Indents
 set expandtab
-autocmd Filetype coffee,xml,htmldjango,less,javascript,css,scss,html,jsx,ruby,eruby,yaml,sh,json setlocal ts=2 sw=2 sts=0
+autocmd Filetype graphql,coffee,xml,htmldjango,less,javascript,css,scss,html,jsx,ruby,eruby,yaml,sh,json setlocal ts=2 sw=2 sts=0
 autocmd Filetype go setlocal ts=4 sw=4 sts=4
 autocmd Filetype proto setlocal ts=4 sw=4 sts=0
 
 " CtrlP Settings
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-\ --ignore .git
-\ --ignore .svn
-\ --ignore .hg
-\ --ignore .swp
-\ --ignore .DS_Store
-\ --ignore "**/*.pyc"
-\ --ignore "TEST-*.xml"
-\ --ignore "node_modules"
-\ -g ""'
+" set runtimepath^=~/.vim/bundle/ctrlp.vim
+" let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+" \ --ignore .git
+" \ --ignore .svn
+" \ --ignore .hg
+" \ --ignore .swp
+" \ --ignore .DS_Store
+" \ --ignore "**/*.pyc"
+" \ --ignore "TEST-*.xml"
+" \ --ignore "node_modules"
+" \ -g ""'
 
 " Ruby on Rails
 noremap <C-b> :R<CR>
@@ -105,6 +105,7 @@ nmap <Leader>% :let<Space>@*=@%<CR>
 " splits
 set splitbelow
 set splitright
+set diffopt+=vertical
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -114,4 +115,13 @@ tnoremap <Esc> <C-\><C-n>
 
 " close windows/delete buffers
 nnoremap <C-q> :q<cr>
-nnoremap <C-q> :bd<cr>
+
+set rtp+=/usr/local/opt/fzf
+
+" fzf
+nnoremap <C-P> :Files<cr>
+nnoremap <C-B> :Buffers<cr>
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+
+" shortcut for :on
+nmap <Leader>q :on<CR>
