@@ -43,12 +43,21 @@
 [submodule "bundle/vim-vinegar"]
 	path = bundle/vim-vinegar
 	url = git://github.com/tpope/vim-vinegar.git
-[submodule "bundle/VimCompletesMe"]
-	path = bundle/VimCompletesMe
-	url = git@github.com:ajh17/VimCompletesMe.git
 [submodule "bundle/fzf.vim"]
 	path = bundle/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
 [submodule "bundle/vim-closer"]
 	path = bundle/vim-closer
 	url = git@github.com:rstacruz/vim-closer.git
+[submodule "bundle/deoplete.nvim"]
+	path = bundle/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "bundle/linediff.vim"]
+	path = bundle/linediff.vim
+	url = https://github.com/AndrewRadev/linediff.vim.git
+[submodule "bundle/splitjoin.vim"]
+	path = bundle/splitjoin.vim
+	url = https://github.com/AndrewRadev/splitjoin.vim
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
