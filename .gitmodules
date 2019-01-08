@@ -61,3 +61,18 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/golden-ratio"]
+	path = bundle/golden-ratio
+	url = https://github.com/roman/golden-ratio
+[submodule "bundle/vim-buftabline"]
+	path = bundle/vim-buftabline
+	url = https://github.com/ap/vim-buftabline
+[submodule "vim-graphql"]
+	path = vim-graphql
+	url = git@github.com:jparise/vim-graphql.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git

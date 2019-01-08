@@ -33,10 +33,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " Keymapping settings
 let mapleader = ","
 
-map <C-e> :NERDTreeToggle<CR>
 nnoremap <leader>w :w<CR>
 :imap <c-w> <Esc>:w<CR>
-map <leader>r :NERDTreeFind<cr>
 
 " Enable clipboard sharing
 set clipboard=unnamed
@@ -46,19 +44,6 @@ set expandtab
 autocmd Filetype graphql,coffee,xml,htmldjango,less,javascript,css,scss,html,jsx,ruby,eruby,yaml,sh,json setlocal ts=2 sw=2 sts=0
 autocmd Filetype go setlocal ts=4 sw=4 sts=4
 autocmd Filetype proto setlocal ts=4 sw=4 sts=0
-
-" CtrlP Settings
-" set runtimepath^=~/.vim/bundle/ctrlp.vim
-" let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-" \ --ignore .git
-" \ --ignore .svn
-" \ --ignore .hg
-" \ --ignore .swp
-" \ --ignore .DS_Store
-" \ --ignore "**/*.pyc"
-" \ --ignore "TEST-*.xml"
-" \ --ignore "node_modules"
-" \ -g ""'
 
 " Ruby on Rails
 noremap <C-b> :R<CR>
