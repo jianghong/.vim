@@ -76,3 +76,6 @@
 [submodule "bundle/vim-ripgrep"]
 	path = bundle/vim-ripgrep
 	url = git@github.com:jremmen/vim-ripgrep.git
+[submodule "bundle/vim-zoom"]
+	path = bundle/vim-zoom
+	url = git@github.com:dhruvasagar/vim-zoom.git
