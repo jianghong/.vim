@@ -58,7 +58,7 @@ nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
-let test#strategy = "dispatch"
+let test#strategy = "neovim"
 
 " Syntastic
 set statusline+=%#warningmsg#

@@ -19,9 +19,6 @@
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = git://github.com/tpope/vim-endwise.git
-[submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
-	url = git@github.com:tpope/vim-rails.git
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = git@github.com:janko-m/vim-test.git
