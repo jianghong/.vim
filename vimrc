@@ -45,9 +45,6 @@ autocmd Filetype graphql,coffee,xml,htmldjango,less,javascript,css,scss,html,jsx
 autocmd Filetype go setlocal ts=4 sw=4 sts=4
 autocmd Filetype proto setlocal ts=4 sw=4 sts=0
 
-" Ruby on Rails
-noremap <C-b> :R<CR>
-
 " Nerd commenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -105,7 +102,7 @@ set rtp+=/usr/local/opt/fzf
 
 " fzf
 nnoremap <C-P> :Files<cr>
-nnoremap <C-B> :Buffers<cr>
+nnoremap <C-B> :Lines<cr>
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 " shortcut for :on
