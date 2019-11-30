@@ -56,6 +56,7 @@ nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 let test#strategy = "neovim"
+let test#neovim#term_position = "top"
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -102,7 +103,8 @@ set rtp+=/usr/local/opt/fzf
 
 " fzf
 nnoremap <C-P> :Files<cr>
-nnoremap <C-B> :Lines<cr>
+nnoremap <C-B> :Buffers<cr>
+nnoremap <Leader>b :BLines<cr>
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 " shortcut for :on
