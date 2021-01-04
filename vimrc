@@ -22,8 +22,8 @@ set showcmd
 set hidden
 set termguicolors     " enable true colors support
 " let ayucolor="mirage" " for mirage version of theme
-let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
+" let ayucolor="dark"   " for dark version of theme
+" colorscheme ayu
 
 " vim airline
 set laststatus=2
@@ -40,9 +40,8 @@ nnoremap <leader>w :w<CR>
 set clipboard=unnamed
 
 " Indents
-set expandtab
-autocmd Filetype graphql,coffee,xml,htmldjango,less,javascript,css,scss,html,jsx,ruby,eruby,yaml,sh,json setlocal ts=2 sw=2 sts=0
-autocmd Filetype go setlocal ts=4 sw=4 sts=4
+" set expandtab
+autocmd Filetype graphql,coffee,xml,htmldjango,less,javascript,css,scss,html,jsx,ruby,eruby,yaml,sh,json setlocal ts=2 sw=2 sts=0 expandtab
 autocmd Filetype proto setlocal ts=4 sw=4 sts=0
 
 " Nerd commenter
